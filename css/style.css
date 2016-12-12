@@ -1,4 +1,6 @@
-
+html{
+	webkit-text-size-adjust: auto;
+}
 
 .main{
 	margin: 7% auto 0 auto;
@@ -15,23 +17,12 @@
 	color: rgb(102, 102, 102);
 }
 
-
-ul{
-	display: inline-flex;
-}
-
-li{
-	list-style: none;
-	margin: 8 15 0 15;
-
-}
-
 #local{
 	margin-bottom: -10;
 }
 #work{
 	margin-top: -10;
-	margin-bottom: 5;
+	margin-bottom: 0;
 }
 .about{
 	margin-left: auto;
@@ -67,5 +58,13 @@ a{
 }
 
 ul{
-	margin-top: 5;
+	margin-top: 1em;
+  	padding: 0;
+}
+
+li{
+	list-style: none;
+	margin: 0 1em;
+	display: inline-block;
+
 }
