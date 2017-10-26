@@ -2,6 +2,29 @@ html{
 	webkit-text-size-adjust: auto;
 }
 
+/*div{
+	border: 1px solid red;
+}*/
+
+ul li {
+    /* 
+     * We want the bullets outside of the list,
+     * so the text is aligned. Now the actual bullet
+     * is outside of the list’s container
+     */
+    list-style-position: outside;
+
+    /*
+     * Because the bullet is outside of the list’s
+     * container, indent the list entirely [thank you stackoverflow]
+     */
+    margin-left: 1em;
+}
+
+body{
+	color: rgb(102,102,102);
+}
+
 .main{
 	margin: 7% auto 0 auto;
 	text-align: center;
@@ -13,21 +36,39 @@ html{
 	margin-bottom: 0;
 }
 
-#local, #work, #school{	
-	color: rgb(102, 102, 102);
+#skills{
+	/*width: 400px;*/
+	text-align: left;
+}
+
+#skills p{
+	margin-bottom: 0;
+}
+
+#skills .title{
+	margin-top: 1rem;
+	margin-left: 6rem;
+}
+
+#skills .item{
+	margin: 0.5rem 1rem;
+	font-size: 1.5rem;
+}
+
+.school{
+	text-align: left;
 }
 
 #local{
-	margin-bottom: -10;
+	/*margin-bottom: -10;*/
 }
-#work{
-	margin-top: -10;
+.work{
+	margin-top: 2em;
 	margin-bottom: 0;
 }
 .about{
 	margin-left: auto;
 	margin-right: auto;
-	width: 50%;
 }
 #about{
 	text-align: left;
@@ -48,23 +89,52 @@ html{
 	background-size: 128px 128px;
 }
 
-hr{
+/*hr{
 	width: 60%;
 
-}
+}*/
 
 a{
 	text-decoration: none;
 }
 
-ul{
+#social{
 	margin-top: 3em;
   	padding: 0;
 }
 
-li{
+#social li{
 	list-style: none;
 	margin: 0 0.5em;
 	display: inline-block;
 
+}
+
+span{
+	margin-bottom: -10rem;
+}
+
+.fa{
+	font-size: 2rem;
+	margin-right: .5rem;
+}
+
+h6{
+	align-items: center;
+}
+
+@media (min-width: 750px) {
+
+	hr{
+	width: 60%;
+}
+
+	.about{
+		width: 55%;
+	}
+	#skills{
+		margin-left: auto;
+		margin-right: auto;
+		width: 55%;
+	}
 }
